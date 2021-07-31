@@ -1,0 +1,112 @@
+body{
+    /* отступы  с боку*/
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+/*размер текста*/
+    font-size: 14px;
+    color: #6c7279;
+/*цвет фона*/
+    background-color: black;
+}
+
+
+/*для всех элемнтов*/
+*,
+*: before,
+*: after {
+    box-sizing: border-box;
+}
+
+
+/* container
+=========================================== */
+.container{ 
+/* ширина и макс ширина сетки */
+    width: 100%;
+    max-width: 1170px;
+/* отступы  с боку*/
+    margin: 0 auto;
+}
+
+
+.header{
+    /*ширина*/
+    width: 100%;
+    /*будет поверх всех элемнтов или вторым слоем ну я понял что будет типа основной тобишь будет по верх всего и вся*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+.header__inner{
+/* уберает расстояние*/
+    display: flex;
+/* justify-content разделяет на обе стороны*/
+    justify-content: space-between;
+/*отступ сверху и снизу*/
+    padding: 35px 0; 
+    /*линия*/
+    border-bottom: 1px solid #515369;
+    align-items: center;
+
+}
+
+/* nav
+=========================================== */
+.nav {
+    /* уберает расстояние*/
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    /*большие буквы*/
+    text-transform: uppercase;
+
+}
+
+
+.nav__link {
+    /*пробелы между словами */
+    margin-left: 50px;
+    color: #fff;
+    /* уберает полоски у ссылок */
+    text-decoration: none ; 
+    /*прозрачность*/
+    opacity: .75; 
+    /*плавный переход какихто свойств*/
+    transition: opacity .1s linear;
+
+}
+/*уберает отсуп у первого элемнта*/
+.nav__link: first-child{
+    margin-left: 0px;
+
+}
+
+/*кароче левая фигня которая подсвечивает при наведении*/
+.nav__link:hover{
+    /*прозрачность*/
+    opacity: 1; 
+}
+
+
+
+/* intro
+=========================================== */
+.intro{
+     height: 750px;
+
+     background: url(../img/banner.jpg) center no-repeat / cover; 
+
+} 
+
+
+
+
+
+
+
+
+
